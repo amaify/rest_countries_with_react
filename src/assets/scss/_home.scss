@@ -1,0 +1,145 @@
+.card{
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+
+
+    @include responsive__mode(tablet-portrait){
+        padding: 2rem 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+
+    @include responsive__mode(tablet-md){
+        padding: 2rem 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+
+    @include responsive__mode(tablet-l){
+        padding: 2rem 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+
+    @include responsive__mode(desktop-sm){
+        padding: 2rem 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+
+    &__content{
+        width: 100%;
+        background: hsl(209, 23%, 22%);
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 4rem;
+        cursor: pointer;
+        text-decoration: none;
+
+        @include responsive__mode(tablet-portrait){
+            width: 45%;
+            margin-bottom: 4rem;
+        }
+
+        @include responsive__mode(tablet-md){
+            width: 30%;
+            margin-bottom: 4rem;
+        }
+
+        @include responsive__mode(tablet-l){
+            width: 32%;
+            margin-bottom: 4rem;
+        }
+
+        @include responsive__mode(desktop-sm){
+            width: 21%;
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__content-two{
+        width: 100%;
+        background: #f9f9f9;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 4rem;
+        cursor: pointer;
+        text-decoration: none;
+        box-shadow: 0 1px 8px 1px rgba(0, 0, 0, 0.4);
+
+        @include responsive__mode(tablet-portrait){
+            width: 45%;
+            margin-bottom: 4rem;
+        }
+
+        @include responsive__mode(tablet-md){
+            width: 30%;
+            margin-bottom: 4rem;
+        }
+
+        @include responsive__mode(tablet-l){
+            width: 32%;
+            margin-bottom: 4rem;
+        }
+
+        @include responsive__mode(desktop-sm){
+            width: 21%;
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__image{
+        width: 100%;
+        height: 200px;
+        margin-bottom: 1rem;
+
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__details{
+        padding: 1rem 0.5rem;
+        color: #f9f9f9;
+        display: block;
+
+        & h2{
+            margin-bottom: 0.8rem;
+        }
+
+        & p:not(:last-child){
+            margin-bottom: 0.6rem;
+        }
+    }
+
+    &__details-two{
+        color: hsl(200, 15%, 8%);
+        padding: 1rem 0.5rem;
+        display: block;
+
+        & h2{
+            margin-bottom: 0.8rem;
+        }
+
+        & p:not(:last-child){
+            margin-bottom: 0.6rem;
+        }
+    }
+}

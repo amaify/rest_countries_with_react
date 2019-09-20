@@ -1,0 +1,281 @@
+.form{
+    padding: 1.2rem 1rem;
+    display: block;
+
+    @include responsive__mode(tablet-portrait){
+        padding: 1.5rem 1.8rem;
+        display: flex;
+        align-items: center;
+    }
+
+    @include responsive__mode(tablet-md){
+        padding: 1.5rem 3rem;
+        display: flex;
+        align-items: center;
+    }
+
+    @include responsive__mode(tablet-l){
+        padding: 1.5rem 1.5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    @include responsive__mode(desktop-sm){
+        padding: 1.5rem 3rem;
+        display: flex;
+        align-items: center;
+    }
+
+    &__search{
+        display: inline-flex;
+        margin-right: auto;
+        width: 100%;
+        padding: 0.4rem 0.9rem;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        background: hsl(209, 23%, 22%);
+
+        @include responsive__mode(tablet-portrait){
+            width: 45%;
+            margin-bottom: 0;
+        }
+
+        @include responsive__mode(tablet-md){
+            width: 45%;
+            margin-bottom: 0;
+        }
+
+        @include responsive__mode(tablet-l){
+            width: 40%;
+            margin-bottom: 0;
+        }
+
+        @include responsive__mode(desktop-sm){
+            width: 25%;
+            margin-bottom: 0;
+        }
+
+        & input{
+            width: 100%;
+            padding: 0.4rem 1rem;
+            outline: none;
+            border: none;
+            background: transparent;
+            color: #f9f9f9;
+        }
+    }
+
+    &__search-two{
+        background: #f9f9f9;
+        display: inline-flex;
+        margin-right: auto;
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 0.4rem 0.9rem;
+        border-radius: 5px;
+        box-shadow: 0 1px 8px 1px rgba(0, 0, 0, 0.4);
+
+        @include responsive__mode(tablet-portrait){
+            width: 45%;
+            margin-bottom: 0;
+        }
+
+        @include responsive__mode(tablet-md){
+            width: 45%;
+            margin-bottom: 0;
+        }
+
+        @include responsive__mode(tablet-l){
+            width: 40%;
+            margin-bottom: 0;
+        }
+
+        @include responsive__mode(desktop-sm){
+            width: 25%;
+            margin-bottom: 0;
+        }
+
+        & input{
+            color: hsl(0, 0%, 52%);
+            width: 100%;
+            padding: 0.4rem 1rem;
+            outline: none;
+            border: none;
+            background: transparent;
+        }
+    }
+
+    &__select{
+        width: 60%;
+        background: hsl(209, 23%, 22%);
+        border-radius: 5px;
+
+        @include responsive__mode(tablet-portrait){
+            width: 30%;
+        }
+
+        @include responsive__mode(tablet-md){
+            width: 35%;
+        }
+
+        @include responsive__mode(tablet-l){
+            width: 30%;
+        }
+
+        @include responsive__mode(desktop-sm){
+            width: 20%;
+        }
+    }
+
+    &__select-two{
+        background: #f9f9f9;
+        width: 60%;
+        border-radius: 5px;
+        box-shadow: 0 1px 8px 1px rgba(0, 0, 0, 0.4);
+
+        @include responsive__mode(tablet-portrait){
+            width: 30%;
+        }
+
+        @include responsive__mode(tablet-md){
+            width: 35%;
+        }
+
+        @include responsive__mode(tablet-l){
+            width: 30%;
+        }
+
+        @include responsive__mode(desktop-sm){
+            width: 20%;
+        }
+    }
+
+    &__regions{
+        display: flex;
+        align-items: center;
+        padding: 0.4rem 1rem;
+        color: #f9f9f9;
+        cursor: pointer;
+        position: relative;
+        width: 100%;
+
+        & p{
+            margin-right: auto;
+        }
+
+        &-list{
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            padding: 0.5rem 1rem;
+            margin-top: 0.2rem;
+            background: hsl(209, 23%, 22%);
+            border-radius: 5px;
+            width: 53.5%;
+            animation-name: slideDown;
+            animation-duration: 0.3s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in;
+
+            @include responsive__mode(tablet-portrait){
+                width: 27.5%;
+            }
+
+            @include responsive__mode(tablet-md){
+                width: 31.5%;
+            }
+
+            @include responsive__mode(tablet-l){
+                width: 26.5%;
+            }
+
+            @include responsive__mode(desktop-sm){
+                width: 18.5%;
+            }
+
+            & li{
+                color: #f9f9f9;
+                cursor: pointer;
+                margin: 0.3rem 0;
+                padding: 0.2rem;
+                border-radius: 5px;
+                transition: all 0.3s;
+
+                &:hover{
+                    background: hsl(0, 0%, 52%);
+                }
+            }
+        }
+    }
+
+    &__regions-two{
+        display: flex;
+        align-items: center;
+        padding: 0.4rem 1rem;
+        color: #848484;
+        cursor: pointer;
+        position: relative;
+        width: 100%;
+
+        & p{
+            margin-right: auto;
+        }
+
+        &-list-two{
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            padding: 0.5rem 1rem;
+            margin-top: 0.2rem;
+            background: #f9f9f9;
+            border-radius: 5px;
+            width: 53.5%;
+            animation-name: slideDown;
+            animation-duration: 0.3s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in;
+            box-shadow: 0 1px 8px 1px rgba(0, 0, 0, 0.4);
+
+            @include responsive__mode(tablet-portrait){
+                width: 27.5%;
+            }
+
+            @include responsive__mode(tablet-md){
+                width: 31.5%;
+            }
+
+            @include responsive__mode(tablet-l){
+                width: 26.5%;
+            }
+
+            @include responsive__mode(desktop-sm){
+                width: 18.5%;
+            }
+
+            & li{
+                color: #848484;
+                cursor: pointer;
+                margin: 0.3rem 0;
+                padding: 0.2rem;
+                border-radius: 5px;
+                transition: all 0.3s;
+
+                &:hover{
+                    background: #848484;
+                    color: #f9f9f9;
+                }
+            }
+        }
+    }
+}
+
+@keyframes slideDown {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

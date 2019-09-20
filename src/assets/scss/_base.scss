@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin responsive__mode($breakpoint){
+    @if($breakpoint == tablet-portrait){
+        @media only screen and (min-width: 36.25rem){@content};
+    }
+
+    @if($breakpoint == tablet-md){
+        @media only screen and (min-width: 45.625rem){@content}
+    };
+
+    @if($breakpoint == tablet-l){
+        @media only screen and (min-width: 56.25rem){@content}
+    };
+
+    @if($breakpoint == desktop-sm){
+        @media only screen and (min-width: 75rem){@content}
+    };
+}
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    font-size: 87.5%; 
+}
