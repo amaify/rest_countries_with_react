@@ -13,7 +13,7 @@ class Countries extends Component {
       searchQuery: "",
       error: "loading",
       filterBy: null,
-      url: "https://restcountries.eu/rest/v2/all"
+      url: "https://restcountries.com/v2/all"
     };
 
     this.searchInputHandler = this.searchInputHandler.bind(this);
